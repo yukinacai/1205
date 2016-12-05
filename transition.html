@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: #CCC;
+/*          transition: background-color .6s,width .6s;轉場動畫 至少給2個*/
+            transition: background-color .6s,width .6s .6s;/*第一個作用時間 第二個延遲時間*/
+            /*transition: all .6s;所有元素一起*/
+        }
+        .box:hover{
+            background-color: #FF0;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
